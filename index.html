@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="dark" data-light-theme="light" data-dark-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+
+    <title>Sao's Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+
+  <body>
+
+    <!--The entire page-->
+    <div class="container">
+
+      <!--Navigation bar-->
+      <div class="nav-wrapper">
+
+        <!--Encapsulates this portion to the lhs-->
+        <div class="left-side">
+
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+
+        </div>
+
+        <!--Encapsulates this portion to the rhs-->
+        <div class="right-side">
+
+          <div class="brand">
+            <div>SAO THAO</div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Master Wrapper-->
+      <div class="content-wrapper">
+
+        <!-- Each block-->
+        <div class="portfolio-items-wrapper">
+          <!-- 1st Singular block -->
+          <div class="portfolio-item-wrapper">
+
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/Fall/Outlook.JPG)">
+            </div>
+
+            <a href="Portland.html" style="cursor: default">
+
+              <div class="img-text-wrapper">
+
+                <div class="logo-wrapper">
+                  <img src="images/Logos/Portland.png" />
+                </div>
+
+                <div class="subtitle">June blues in Portland</div>
+
+              </div>
+
+            </a>
+
+          </div>
+
+          <!-- 2nd Singular block -->
+          <div class="portfolio-item-wrapper">
+
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/Winter/Bryce\ Valley.JPG)">
+            </div>
+
+            <a href="BryceCanyon.html" style="cursor: default">
+              <div class="img-text-wrapper">
+
+                <div class="logo-wrapper">
+                  <img src="Images/Logos/Bryce Canyon.png" />
+                </div>
+
+                <div class="subtitle">Winter escape in Bryce Canyon</div>
+
+              </div>
+
+            </a>
+
+          </div>
+
+          <!-- 3rd Singular block -->
+          <div class="portfolio-item-wrapper">
+
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/Spring/Bamboo\ Forrest.JPG)"
+            ></div>
+
+            <a href="Japan.html" style="cursor: default">
+              <div class="img-text-wrapper">
+
+                <div class="logo-wrapper">
+                  <!-- To use images inside html -->
+                  <img src="Images/Logos/Japan.png" />
+                </div>
+
+                <div class="subtitle">Chasing the rising sun in Japan</div>
+              </div>
+
+            </a>
+
+          </div>
+
+          <!-- 4th Singular block -->
+          <div class="portfolio-item-wrapper">
+
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(Images/StreetArt/WuTang4eva.jpg)">
+            </div>
+
+            <a href="WallArt.html" style="cursor: default">
+              <div class="img-text-wrapper">
+
+                <div class="logo-wrapper">
+                  <img src="Images/Logos/Spraycan.png" />
+                </div>
+
+                <div class="subtitle">Figurative street art </div>
+
+              </div>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+  <script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach((portfolioItem) => {
+      // Each time during hovering.
+      portfolioItem.addEventListener('mouseover', () => {
+        // Call img-darken to animate and darken image when hovering.
+        portfolioItem.childNodes[1].classList.add('img-darken');
+      });
+
+      portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+      });
+    });
+  </script>
+
+</html>
