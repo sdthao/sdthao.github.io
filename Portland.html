@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portland</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+            </div>
+
+            <div class="right-side">
+
+                <div class="brand">
+                    <div> SAO THAO </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="content-wrapper">
+       
+            <div class="three-column-wrapper">
+
+                <div class="portfolio-photos-wrapper">
+
+                    <div class="portfolio-photo-wrapper">
+
+                        <img src="Images/Fall/Light House.JPG">
+
+                        <div class="img-photo-wrapper">
+
+                            <div class="details">
+                                <p> Built in 1890, Cape Meares Lighthouse sits atop a cliff off the Oregon coast. Surrounded by a beautiful landscape with lush green tress on one side, and the Oregon coast on the other, this place was a breath-taking. </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="portfolio-photos-wrapper">  
+
+                    <div class="portfolio-photo-wrapper">
+
+                        <img src="Images/Fall/Light.JPG">
+
+                        <div class="img-photo-wrapper">
+                            
+                            <div class="details">
+                                <p> Cape Meares Lighthouse first lit in 1890. It served as the light station for Tillamook Bay for 124 years. It's amazing to see how good of a condition the bulb still was. I'm certain this lighthouse is still capable to perform it's duty. </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="portfolio-photos-wrapper">   
+
+                    <div class="portfolio-photo-wrapper">
+
+                        <img src="Images/Fall/Multhomah Falls Bridge.JPG">
+
+                        <div class="img-photo-wrapper">
+                            
+                            <div class="details">
+                                <p> Multnomah Falls is Oregon's tallest waterfall standing at 620' tall. Just off of the Colombia River Highway, this magical waterfall gushes through two tiers of basalt cliffs, feeding directly into the Colombia River. The area is also available during the winter as tourist flock to this place to see this beautiful waterfall frozen in time.  </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="portfolio-photos-wrapper">   
+
+                    <div class="portfolio-photo-wrapper">
+
+                        <img src="Images/Fall/Outlook.JPG">
+
+                        <div class="img-photo-wrapper">
+                            
+                            <div class="details">
+                                <p>45.4865° N, 123.9783° W </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-photos-wrapper">
+
+                    <div class="portfolio-photo-wrapper">
+
+                        <img src="Images/Fall/Aisle.JPG">
+                        
+                        <div class="img-photo-wrapper">
+                            
+                            <div class="details">
+                                <p> This whole experience was surreal. As we made our way down to the light house the mist rolled in and created such a magical vibe. As we got closer we could taste the salty sea breeze while some light rain began to fall.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="portfolio-photos-wrapper">
+
+                    <div class="portfolio-photo-wrapper">
+
+                        <img src="Images/Fall/Fall Leaves.JPG">
+
+                        <div class="img-photo-wrapper">
+                            
+                            <div class="details">
+                                <p> Making our way through Silver Falls State Park, my fiance spots a giant leaf larger than the size of her head. Some of the hikes in this park can get challenging and long. It didn't matter where we would end up however, we were just blown away by the sheer beauty of this forrest.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+
+const portfolioPhotos = document.querySelectorAll('.portfolio-photo-wrapper')
+
+portfolioPhotos.forEach(portfolioPhoto => {
+    // Each time during hovering.
+    portfolioPhoto.addEventListener('mouseover', () => {
+        portfolioPhoto.childNodes[1].classList.add('photo-darken');
+    })
+
+    portfolioPhoto.addEventListener('mouseout', () => {
+        portfolioPhoto.childNodes[1].classList.remove('photo-darken');
+    })
+})
+
+</script>    
+</html>
